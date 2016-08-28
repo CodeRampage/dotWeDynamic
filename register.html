@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="css/main.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="showhide.js"></script>
+	</head>
+	<body>
+		<!--Sign in-->
+		<div id="first">
+			<form action="" method="post">
+				<h1>Sign-in</h1>
+					<input type="email" name="username" placeholder="Username" required="">
+				<div>
+					<input type="password" name="pwd" placeholder="Password" required="">
+				</div>
+				<div>
+					<input type="submit" name="register" id="signinbtn" value="Signin">
+				</div>
+				<p id=""><a href="#" id="pass">Forgot Password?</a></p>
+				<p id="">Don't have an account?<a href="#" id="signup">Sign up here</a></p>
+			</form>
+		</div><!--End Sign-in-->
+		
+		<!--Register-->
+		<div id="second">
+			<form action="validate.php" method="post">
+				<h1>Create a Free Account.</h1>
+				<div>
+					<input type="text" name="first_name" placeholder="First Name" required="">
+				</div>
+				<div>
+					<input type="text" name="last_name" placeholder="Last Name" required="">
+				</div>
+				<div>
+					<input type="text" name="contact" placeholder="Contact Number" required="">
+				</div>
+					<input type="email" name="username" placeholder="Username" required="">
+				<div>
+					<input type="password" name="pwd" placeholder="Password" required="">
+				</div>
+				<div>
+					<input type="submit" name="register" id="signupbtn" value="Register">
+					<input type="button" name="regbtn" id="sign" value="Hide All">
+				</div>
+				<p id="#">Already have an account?<a href="#" id="signin"> Sign in</a></p>
+			</form>
+		</div><!--End Register-->
+	</body>
+</html>
